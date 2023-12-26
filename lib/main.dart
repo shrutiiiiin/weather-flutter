@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:weather/pages/weather_page.dart';
 
 void main() {
   runApp(weather());
@@ -9,6 +11,9 @@ class weather extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: weatherpage(),
+    );
   }
 }
